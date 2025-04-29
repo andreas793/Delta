@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+    include includes/head/index.pug
+    body
+        table.table__wrapper
+            thead
+                tr.table__row
+                    td.table__td Показатель
+                    td.table__td Текущий день
+                    td.table__td Вчера
+                    td.table__td Этот день недели
+            tbody
+                tr.table__row.table__row-sub.active
+                    td.table__td Выручкаб руб
+                    td.table__td 500 521
+                    td.table__td.positive 480 521
+                        span.percent 4%
+                    td.table__td.negative 4 805 121
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 480521, 500521, 480521, 300000')
+                            #container
+                tr.table__row.table__row-sub
+                    td.table__td Наличные
+                    td.table__td 300 000
+                    td.table__td 300 000
+                        span.percent 0%
+                    td.table__td 300 000
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 300000, 200000, 300000')
+                            #container-2
+                tr.table__row.table__row-sub
+                    td.table__td Безналичный рассчет
+                    td.table__td 100 000
+                    td.table__td 100 000
+                        span.percent 0%
+                    td.table__td 100 000
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 100000, 400000, 100000')
+                            #container-3
+                tr.table__row.table__row-sub
+                    td.table__td Кредитные карты
+                    td.table__td 100 000
+                    td.table__td 100 521
+                        span.percent 0%
+                    td.table__td 100 000 521
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 100521, 200521, 220521')
+                            #container-4
+                tr.table__row
+                    td.table__td Средний чек, руб
+                    td.table__td 1 300
+                    td.table__td.positive 900
+                        span.percent 44%
+                    td.table__td.positive 900
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 1300, 900, 1300, 900')
+                            #container-6
+                tr.table__row
+                    td.table__td Средний гость, руб
+                    td.table__td 1 200
+                    td.table__td.positive 800
+                        span.percent 50%
+                    td.table__td.positive 800
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 800, 1200, 800, 800')
+                            #container-7
+                tr.table__row
+                    td.table__td Удаления из чека (после оплаты), руб
+                    td.table__td 1 000
+                    td.table__td.negative 1 100
+                        span.percent -9%
+                    td.table__td.positive 900
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 800, 1200, 800')
+                            #container-8
+                tr.table__row
+                    td.table__td Удаления из чека (до оплаты), руб
+                    td.table__td 1 300
+                    td.table__td 1 300
+                        span.percent 0%
+                    td.table__td.positive 900
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 1300, 1300, 900')
+                            #container-9
+                tr.table__row
+                    td.table__td Количество чеков
+                    td.table__td 34
+                    td.table__td.negative 36
+                        span.percent -6%
+                    td.table__td 34
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 34, 36, 34')
+                            #container-10
+                tr.table__row
+                    td.table__td Количество гостей
+                    td.table__td 34
+                    td.table__td.negative 36
+                        span.percent -6%
+                    td.table__td.positive 32
+                    td.table__td.graph
+                        figure.highcharts-figure(data-highcharts-series='0, 34, 36, 32')
+                            #container-11
+        script(src="../js/main.js")
+
+
+
+
+
+
